@@ -1,0 +1,8 @@
+{
+	"id": 4, 
+	"regexPattern": "REGEX_VALUE", 
+	"tokenType": "ENUM_VALUE", 
+	"partners": [ 	],
+	"possibleFollowUps": [ 	],
+	"shouldPush": true 
+}

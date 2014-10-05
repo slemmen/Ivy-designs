@@ -1,0 +1,61 @@
+{
+	"id": 4, 
+	"regexPattern": "REGEX_VALUE", 
+	"tokenType": "ENUM_VALUE", 
+	"partners": [ 
+			{
+				"id": 2, 
+				"regexPattern": "REGEX_VALUE", 
+				"tokenType": "ENUM_VALUE", 
+				"partners": [ 
+						{
+							"id": 12, 
+							"regexPattern": "REGEX_VALUE", 
+							"tokenType": "ENUM_VALUE", 
+							"partners": [  ],
+							"possibleFollowUps": [  ],
+							"shouldPush": true 
+						}
+				],
+				"possibleFollowUps": [  
+						{
+							"id": 9, 
+							"regexPattern": "REGEX_VALUE", 
+							"tokenType": "ENUM_VALUE", 
+							"partners": [  ],
+							"possibleFollowUps": [  ],
+							"shouldPush": true 
+						},
+						{
+							"id": 28, 
+							"regexPattern": "REGEX_VALUE", 
+							"tokenType": "ENUM_VALUE", 
+							"partners": [  ],
+							"possibleFollowUps": [  ],
+							"shouldPush": true 
+						}
+				
+				],
+				"shouldPush": true 
+			},
+			{
+				"id": 8, 
+				"regexPattern": "REGEX_VALUE", 
+				"tokenType": "ENUM_VALUE", 
+				"partners": [  ],
+				"possibleFollowUps": [  ],
+				"shouldPush": true 
+			}
+	],
+	"possibleFollowUps": [ 
+		{
+			"id": 5, 
+			"regexPattern": "REGEX_VALUE", 
+			"tokenType": "ENUM_VALUE", 
+			"partners": [  ],
+			"possibleFollowUps": [  ],
+			"shouldPush": true 
+		}
+	],
+	"shouldPush": true 
+}
