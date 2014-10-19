@@ -1,0 +1,173 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<logicalClassDesignerModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" dslVersion="1.0.0.0" Id="f417e0ba-9251-4ed3-bbf3-fbf77b97487d" name="VM" linkedPackageId="d2e395d2-9fc6-4606-9d42-8ba80c1d2935" xmlns="http://schemas.microsoft.com/dsltools/LogicalClassDesigner">
+  <profileInstances>
+    <packageHasProfileInstances Id="81917ef2-6b8d-4be2-b4ea-7aa6c54a0ae2">
+      <profileInstance Id="02946526-733a-4a26-8106-062e35382abc" name="StandardProfileL2">
+        <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
+      </profileInstance>
+      <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
+    </packageHasProfileInstances>
+    <packageHasProfileInstances Id="b74eeb7d-85ac-4135-af27-0049c0f8fdfe">
+      <profileInstance Id="9eec2c7c-e06d-4626-97ca-bd71a723c3b6" name="StandardProfileL3">
+        <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
+      </profileInstance>
+      <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
+    </packageHasProfileInstances>
+  </profileInstances>
+  <packagedElements>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="10723934-2063-43bf-8ee7-a15c23acaec7" name="VirtualMachine" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="66e3d836-db67-4dd8-97b7-5c495b330ec9" />
+        <targetEnds>
+          <association Id="c30f2a3e-2a1c-43b9-b0b9-5cef74fc4ce8" isDerived="false" sourceEndRoleName="VirtualMachine" targetEndRoleName="BaseAction" isLeaf="false" isAbstract="false">
+            <classMoniker Id="c8c79f09-fcfc-4f2b-adb9-fae6c9ce861d" LastKnownName="BaseAction" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="9e1f3d9c-b101-44dd-bf23-41442ebab74a" name="VirtualMachine" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="88489e1e-285d-49b6-99e4-60360a8fc484" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="de0f5be2-51d8-47ea-96a7-d2ad006487ef" name="BaseAction" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <lowerValueInternal>
+                    <literalString Id="ae2367f5-0d82-4583-bbf8-5b67c6d71e5d" name="Lower" value="1">
+                      <elementDefinition Id="d4c662b7-fa10-4727-a99c-1d67660d9aaf" />
+                    </literalString>
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString Id="8c1af088-6b1e-4b1f-b0b4-8fd0538e6433" name="Upper" value="1">
+                      <elementDefinition Id="a27acf8e-2b77-4531-8f63-a4e9e4d5e17d" />
+                    </literalString>
+                  </upperValueInternal>
+                  <elementDefinition Id="17ce66c5-7aa0-4a96-ba6c-286ecf02bef8" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="6b6746ff-976b-4d84-817e-923e00413e80" />
+          </association>
+        </targetEnds>
+        <ownedAttributesInternal>
+          <property Id="243a4d73-8096-42a3-9d23-4e6c21807977" name="variables" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="5ea22048-2d36-4244-a703-450395be7c24" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="e81e2de4-661c-4901-98d4-f3b12a638163" LastKnownName="Dictionary&lt;int" />
+            </type_NamedElement>
+          </property>
+        </ownedAttributesInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="c8c79f09-fcfc-4f2b-adb9-fae6c9ce861d" name="BaseAction" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="d6c2e401-ca64-4953-a90e-7ad9e4796615" />
+        <targetEnds>
+          <association Id="95935c61-7c04-4277-b008-16e79552ce93" isDerived="false" sourceEndRoleName="BaseAction" targetEndRoleName="BaseAction" isLeaf="false" name="NextAction" isAbstract="false">
+            <classMoniker Id="c8c79f09-fcfc-4f2b-adb9-fae6c9ce861d" LastKnownName="BaseAction" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="a1727f87-96fd-4cb6-ba07-ee3e3cff4e1e" name="BaseAction" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="ef684dfc-d75e-40b0-aaee-9e72aeaf202c" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="00ac2aad-32e2-42c7-a684-a13319adf816" name="BaseAction" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="32bb4b29-9025-424d-9abc-a15b07c26394" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="07e3c8dd-02b3-45d9-a3c1-8b4d6f535166" />
+          </association>
+        </targetEnds>
+        <ownedOperationsInternal>
+          <operation Id="aeedc943-6688-443b-a1f3-c6457c2d47ea" name="execute" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="e8d23767-d1fd-4b28-8fdf-8141e9aeb732" />
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="a6c00780-b093-4e62-999c-35d51ef38a86" name="vm" direction="In" isUnique="false">
+                  <elementDefinition Id="7dd2d3b0-bd70-49c2-af53-f7ba1c75fd12" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="dc9cf089-d704-4dff-adf9-2ac95dd994f8" LastKnownName="VirtualMachine" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="633991b1-67eb-4c10-9047-a2b073fd8504" name="DoNothingAction" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="58d2e8dc-7c0a-48dc-af57-2f1bbf6cc119" />
+        <generalsInternal>
+          <generalization Id="8d41c11e-8cc5-4daa-af0b-3ca8747e5490" isSubstitutable="false">
+            <classMoniker Id="c8c79f09-fcfc-4f2b-adb9-fae6c9ce861d" LastKnownName="BaseAction" />
+            <elementDefinition Id="26b19cfa-e35c-403a-bb9b-47018d5be4c3" />
+          </generalization>
+        </generalsInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="0145280f-53da-44c7-b0f6-8188d184d363" name="JumpAction" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="ebed8026-dda6-4066-a570-9e1d1622406c" />
+        <generalsInternal>
+          <generalization Id="19804f59-f789-42cf-ba78-aeb3b820d370" isSubstitutable="false">
+            <classMoniker Id="c8c79f09-fcfc-4f2b-adb9-fae6c9ce861d" LastKnownName="BaseAction" />
+            <elementDefinition Id="4b553ffd-f184-43f5-bb5a-644f1c69e73d" />
+          </generalization>
+        </generalsInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="364a087a-fe3f-4655-8d8d-14d49397ee33" name="JumpConditionalAction" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="a1044704-04d1-44e7-81a1-66df85f4269f" />
+        <generalsInternal>
+          <generalization Id="aeb94155-1c32-4972-bff3-5d086acb4f1d" isSubstitutable="false">
+            <classMoniker Id="c8c79f09-fcfc-4f2b-adb9-fae6c9ce861d" LastKnownName="BaseAction" />
+            <elementDefinition Id="1083f2e6-5f19-4d8a-a843-5e14ff45e888" />
+          </generalization>
+        </generalsInternal>
+        <targetEnds>
+          <association Id="b4f11d0f-e3e3-4e0f-8bc6-150b42086077" isDerived="false" sourceEndRoleName="JumpConditionalAction" targetEndRoleName="BaseAction" isLeaf="false" name="FalseAction" isAbstract="false">
+            <classMoniker Id="c8c79f09-fcfc-4f2b-adb9-fae6c9ce861d" LastKnownName="BaseAction" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="015ef181-3a6c-4273-ba82-4e5cfdb103f2" name="JumpConditionalAction" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="087cdf9f-c8de-457d-b23e-39be94f701fd" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="0d69aeed-9333-4f71-af73-005db1f64e2f" name="BaseAction" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="c64a3ba7-4f47-478d-8c17-5b93549a540d" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="2e300a1f-3460-4d4e-8820-88e36511d7a8" />
+          </association>
+        </targetEnds>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="16cf681a-59b7-4034-82d6-13a8bc4e774a" name="AssignmentAction" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="1aad2119-7573-4f12-9ebb-733a75d369a6" />
+        <generalsInternal>
+          <generalization Id="d1288956-8328-416b-bd1a-3da73ad36554" isSubstitutable="false">
+            <classMoniker Id="c8c79f09-fcfc-4f2b-adb9-fae6c9ce861d" LastKnownName="BaseAction" />
+            <elementDefinition Id="4f9153e6-1e98-40bd-9435-5d245dc523e6" />
+          </generalization>
+        </generalsInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <packageHasNamedElement>
+      <referencedType Id="dc9cf089-d704-4dff-adf9-2ac95dd994f8" name="VirtualMachine" isAbstract="false" isLeaf="false" cachedFullName="ModelingProject1::VirtualMachine">
+        <elementDefinition Id="66e3d836-db67-4dd8-97b7-5c495b330ec9" />
+      </referencedType>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <referencedType Id="e81e2de4-661c-4901-98d4-f3b12a638163" name="Dictionary&lt;int" isAbstract="false" isLeaf="false" cachedFullName="Dictionary&lt;int">
+        <elementDefinition Id="50022f84-fe1c-470e-90b0-5fcebe4fcbf8" />
+      </referencedType>
+    </packageHasNamedElement>
+  </packagedElements>
+  <package Id="d2e395d2-9fc6-4606-9d42-8ba80c1d2935" name="ModelingProject1">
+    <elementDefinition Id="c72ede56-838b-4691-8a2e-00a155fe2856" />
+  </package>
+</logicalClassDesignerModel>
